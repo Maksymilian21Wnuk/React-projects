@@ -103,6 +103,7 @@ export const Make_slider = (props : any) => {
 export const Make_select = (props : any) => {
     return (
         <fieldset className="SelectFieldset">
+        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
         <label className="Label" htmlFor={props.htmlfor}> {props.label} </label>
         <Select.Root>
         <Select.Trigger className="SelectTrigger" aria-label="Options">
@@ -121,6 +122,7 @@ export const Make_select = (props : any) => {
         </Select.Content>
         </Select.Portal>
     </Select.Root>
+    </div>
     </fieldset>
   );
 }

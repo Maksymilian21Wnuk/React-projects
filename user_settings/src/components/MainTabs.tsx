@@ -49,3 +49,17 @@ export const Preferences = () => {
         );
   }
 
+export const Location = () => {
+  return (
+    <Tabs.Content className="TabsContent" value="location">
+      <Make_tab_header text="Change your location here. Click save when you're done." />
+
+      <Make_fieldset htmlfor="country" label="Country" type="text" />
+      <Make_fieldset htmlfor="city" label="City" type="text" />
+      <Make_fieldset htmlfor="zip-code" label="Zip-code" type="text" />
+
+      <Make_button button_vals="Save location" />
+    </Tabs.Content>
+  );
+
+}

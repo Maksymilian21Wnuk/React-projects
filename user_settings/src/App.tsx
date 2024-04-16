@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
 import TabListGetter from './components/TabListGetter';
-import { Account, Password, Preferences } from './components/MainTabs';
+import { Account, Password, Preferences, Location } from './components/MainTabs';
 
 
 
@@ -18,6 +18,7 @@ const App = () => {
 
     <Preferences />
 
+    <Location />
   
   </Tabs.Root>
 

@@ -18,6 +18,7 @@ const TabListGetter = () => {
     <TabsTriggerGet value="account" name="Account" />
     <TabsTriggerGet value="password" name="Password" />
     <TabsTriggerGet value="preferences" name="Preferences" />
+    <TabsTriggerGet value="location" name="Location" />
   </Tabs.List>
   );
 }
