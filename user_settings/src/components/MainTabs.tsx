@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
 import { Make_button, Make_fieldset, Make_tab_header, Make_radio, Make_switch, Make_slider, Make_select } from './Makers';
 import "./styles.css"
 
 export const Account = () => {
+
     return (
       <Tabs.Content className="TabsContent" value="account">
         <Make_tab_header text="Make changes to your account here. Click save when you're done." />

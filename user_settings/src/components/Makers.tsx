@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import * as RadioGroup from '@radix-ui/react-radio-group';
 import * as Select from '@radix-ui/react-select';
-import { ChevronDownIcon, ChevronUpIcon } from '@radix-ui/react-icons';
+import { ChevronDownIcon } from '@radix-ui/react-icons';
 import * as Switch from '@radix-ui/react-switch';
 import * as Slider from '@radix-ui/react-slider';
 import "./styles.css"
@@ -16,11 +16,6 @@ type Button_props = {
     button_vals : string
 };
 
-type Radio = {
-    label : string,
-    htmlfor : string,
-    values : string[]
-};
 
 // function to make fieldset with given field values
 export const Make_fieldset = (field_vals : Field) => {
@@ -57,12 +52,12 @@ export const Make_tab_header = (props : any) => {
 // function to make radio with given radio type, values passed
 // as array of string
 
-export const Make_radio = (props) => {
+export const Make_radio = (props : any) => {
     return (
         <fieldset className="RadioFieldset">
             <legend className="RadioLegend">{props.label}</legend>
             <RadioGroup.Root className="RadioGroupRoot" defaultValue="default" aria-label="View density">
-                {props.values.map((value) => (
+                {props.values.map((value : any) => (
                     <div key={value} className="RadioItemContainer">
                         <RadioGroup.Item value={value} className="RadioGroupItem">
                             <RadioGroup.Indicator className="RadioGroupIndicator" />
@@ -78,7 +73,7 @@ export const Make_radio = (props) => {
 export const Make_slider = (props : any) => {
     const [value, setValue] = useState(50); 
 
-    const handleChange = (newValue) => {
+    const handleChange = (newValue : any) => {
         console.log(newValue);
         setValue(newValue);
     };

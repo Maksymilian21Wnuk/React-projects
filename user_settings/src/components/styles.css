@@ -22,6 +22,7 @@ input {
   width: 600px;
   box-shadow: 0 2px 10px grey;
   font-family: Arial, Helvetica, sans-serif;
+  margin :0 auto;
 }
 
 .TabsList {
@@ -126,170 +127,170 @@ input {
 
   }
 
-  .RadioFieldset {
-    margin: 10px 0;
-    border: none;
-  }
-  
-  .RadioLegend {
-    margin-bottom: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-  
-  .RadioItemContainer {
-    margin-bottom: 20px; /* Adjust the spacing as needed */
-    display: flex;
-    align-items: center;
-  }
-  
-  .RadioLabel {
-    margin-left: 30px; /* Adjust the spacing as needed */
-  }
-  
-  .RadioGroupItem {
-    background-color: rgb(238, 238, 238);
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-    box-shadow: 0 2px 10px var(--black-a7);
-  }
-  .RadioGroupItem:hover {
-    background-color: var(--violet-3);
-  }
-  .RadioGroupItem:focus {
-    box-shadow: 0 0 0 2px black;
-  }
+.RadioFieldset {
+  margin: 10px 0;
+  border: none;
+}
+
+.RadioLegend {
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.RadioItemContainer {
+  margin-bottom: 20px; /* Adjust the spacing as needed */
+  display: flex;
+  align-items: center;
+}
+
+.RadioLabel {
+  margin-left: 30px; /* Adjust the spacing as needed */
+}
+
+.RadioGroupItem {
+  background-color: rgb(238, 238, 238);
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 10px var(--black-a7);
+}
+.RadioGroupItem:hover {
+  background-color: var(--violet-3);
+}
+.RadioGroupItem:focus {
+  box-shadow: 0 0 0 2px black;
+}
 
 
-  
-  .RadioGroupIndicator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .RadioGroupIndicator::after {
-    content: '';
-    display: block;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: var(--violet-11);
-  }
-  
-  .Label {
-    color: var(--violet-12);
-    font-size: 15px;
-    line-height: 1;
-    padding-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
 
-  .Fieldset {
-    padding: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .Label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .Input {
-    width: 100%;
-    padding: 8px;
-    border: 2px solid #2906b4;
-    border-radius: 5px;
-    background-color: rgb(186, 169, 202);
-    box-sizing: border-box; 
-  }
-  
-  .Input:focus {
-    outline: none;
-    border-color: dodgerblue;
-    box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
-  }
-  
+.RadioGroupIndicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.RadioGroupIndicator::after {
+  content: '';
+  display: block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: var(--violet-11);
+}
+
+.Label {
+  color: var(--violet-12);
+  font-size: 15px;
+  line-height: 1;
+  padding-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 
-  .SliderRoot {
-    position: relative;
-    display: flex;
-    align-items: center;
-    user-select: none;
-    touch-action: none;
-    width: 200px;
-    height: 20px;
-  }
-  
-  .SliderTrack {
-    background-color: var(--black-a10);
-    position: relative;
-    flex-grow: 1;
-    border-radius: 9999px;
-    height: 3px;
-  }
-  
-  .SliderRange {
-    position: absolute;
-    background-color: white;
-    border-radius: 9999px;
-    height: 100%;
-  }
-  
-  .SliderThumb {
-    display: block;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    box-shadow: 0 2px 10px var(--black-a7);
-    border-radius: 10px;
-  }
-  .SliderThumb:hover {
-    background-color: var(--violet-3);
-  }
-  .SliderThumb:focus {
-    outline: none;
-    box-shadow: 0 0 0 5px var(--black-a8);
-  }
+.Fieldset {
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
-  
-  .SwitchRoot {
-    width: 42px;
-    height: 25px;
-    background-color: var(--black-a9);
-    border-radius: 9999px;
-    position: relative;
-    box-shadow: 0 2px 10px var(--black-a7);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  }
-  .SwitchRoot:focus {
-    box-shadow: 0 0 0 2px black;
-  }
+.Label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-  .SwitchRoot[data-state='checked'] {
-    background-color: rgb(56, 105, 182);
-  }
-  
-  .SwitchThumb {
-    display: block;
-    width: 21px;
-    height: 21px;
-    background-color: white;
-    border-radius: 9999px;
-    box-shadow: 0 2px 2px var(--black-a7);
-    transition: transform 100ms;
-    transform: translateX(2px); 
-    will-change: transform;
-  }
-  .SwitchThumb[data-state='checked'] {
-    transform: translateX(19px);
-  }
-  
+.Input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #2906b4;
+  border-radius: 5px;
+  background-color: rgb(186, 169, 202);
+  box-sizing: border-box; 
+}
+
+.Input:focus {
+  outline: none;
+  border-color: dodgerblue;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
+}
+
+
+
+.SliderRoot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 200px;
+  height: 20px;
+}
+
+.SliderTrack {
+  background-color: var(--black-a10);
+  position: relative;
+  flex-grow: 1;
+  border-radius: 9999px;
+  height: 3px;
+}
+
+.SliderRange {
+  position: absolute;
+  background-color: white;
+  border-radius: 9999px;
+  height: 100%;
+}
+
+.SliderThumb {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px var(--black-a7);
+  border-radius: 10px;
+}
+.SliderThumb:hover {
+  background-color: var(--violet-3);
+}
+.SliderThumb:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px var(--black-a8);
+}
+
+
+.SwitchRoot {
+  width: 42px;
+  height: 25px;
+  background-color: var(--black-a9);
+  border-radius: 9999px;
+  position: relative;
+  box-shadow: 0 2px 10px var(--black-a7);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.SwitchRoot:focus {
+  box-shadow: 0 0 0 2px black;
+}
+
+.SwitchRoot[data-state='checked'] {
+  background-color: rgb(56, 105, 182);
+}
+
+.SwitchThumb {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 2px 2px var(--black-a7);
+  transition: transform 100ms;
+  transform: translateX(2px); 
+  will-change: transform;
+}
+.SwitchThumb[data-state='checked'] {
+  transform: translateX(19px);
+}
+
 
   

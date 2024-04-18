@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import * as Tabs from '@radix-ui/react-tabs';
 import TabListGetter from './components/TabListGetter';
 import { Account, Password, Preferences, Location } from './components/MainTabs';
