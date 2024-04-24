@@ -10,7 +10,7 @@ type Field = {
     htmlfor : string,
     label : string,
     type : string
-  }
+};
 
 type Button_props = {
     button_vals : string
