@@ -1,9 +1,13 @@
 
 
-export type NavbarProps = {
-    darkMode: boolean;
-    toggleTheme: () => void;
-    values : string[]
+
+export type CompanyProps = {
+    name: string;
+    slogan: string;
+    about : string;
+    services : Service[];
+    teamMembers : TeamMember[];
+    blogposts : BlogPost[];
 }
 
 export type About = {
@@ -31,21 +35,14 @@ export type Service = {
     description: string;
 }
 
-export type Name = {
-    name: string;
-}
-
-export type Slogan = {
-    slogan: string;
-}
 
 export type ServiceProps = {
     services: Service[];
 }
 
 export type HeaderProps = {
-    name: Name;
-    slogan: Slogan;
+    name: string;
+    slogan: string;
 }
 
 export type Contact = {
