@@ -13,8 +13,7 @@ function Nav() {
     <AppBar position="sticky" sx={{ borderRadius: '15px', backgroundColor: '#7091e6'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1 }}>
-            {/* Render Home button on the left */}
+          <Box sx={{ flexGrow: 1, justifyContent: 'center', display: 'flex'}}>
             <Button
               component={Link}
               to="/"
@@ -22,6 +21,7 @@ function Nav() {
                 color: 'white',
                 textDecoration: 'none',
                 backgroundColor: '#3d52a0',
+                width: '240px',
                 '&:hover': {
                   backgroundColor: '#8697c4',
                 },
