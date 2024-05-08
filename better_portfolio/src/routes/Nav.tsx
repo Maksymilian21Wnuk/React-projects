@@ -5,53 +5,40 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-const pages = ['Home', 'About', 'Projects'];
+const pages = [
+  {name: 'Home',page: ''}, 
+  {name:'About', page:'About'}, 
+  {name:'Projects', page:'Projects'},];
 
 function Nav() {
-
   return (
-    <AppBar position="sticky" sx={{backgroundColor: 'primary'}}>
+    <AppBar position="sticky" sx={{ backgroundColor: 'primary' }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, justifyContent: 'center', display: 'flex'}}>
-            <Button
-              component={Link}
-              to="/"
-              sx={{
-                color: 'white',
-                textDecoration: 'none',
-                backgroundColor: '#3d52a0',
-                width: '240px',
-                '&:hover': {
-                  backgroundColor: '#8697c4',
-                },
-              }}
-            >
-              Home
-            </Button>
-          </Box>
-          <Box sx={{ display: 'flex', justifyContent: 'flex-end', gap: '40px' }}>
-            {pages.slice(1).map((page) => (
+        <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'center' }}>
+          {pages.map((page, index) => (
+            <Box key={index} 
+            sx={{ marginRight: index < pages.length - 1 ? '40px' : '0' }}>
               <Button
-                key={page}
                 component={Link}
-                to={`/${page}`}
+                to={`/${page.page}`}
                 sx={{
-                  color: 'white',
+                  color: 'primary.main',
+                  fontWeight: 'bold',
                   textDecoration: 'none',
-                  backgroundColor: '#3d52a0',
+                  backgroundColor: 'primary.light',
                   '&:hover': {
-                    backgroundColor: '#8697c4',
+                    backgroundColor: 'secondary.light',
                   },
                 }}
               >
-                {page}
+                {page.name}
               </Button>
-            ))}
-          </Box>
+            </Box>
+          ))}
         </Toolbar>
       </Container>
     </AppBar>
   );
 }
+
 export default Nav;

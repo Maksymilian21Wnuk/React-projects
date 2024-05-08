@@ -6,19 +6,28 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Header from './components/header';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import * as React from 'react';
+import myImage from "../assets/me.png";
+import BoxWrapper from './components/box_wrapper';
 
 function Home() {
   const [mail, setMail] = React.useState(false);
 
 
   return (
-    <Box p={3} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-      <Header title='Maksymilian Wnuk' />
+    <BoxWrapper>
+    <Header title='Maksymilian Wnuk' />
       <Typography variant="h3" paragraph>
         <Box fontWeight="300">
         Computer Science Student
         </Box>
       </Typography>
+
+      <Box sx={{ maxWidth: '100%', marginBottom: 2, borderRadius: '50%', overflow: 'hidden' }}>
+        <img src={myImage} 
+        alt="ME" 
+        style={{ maxWidth: '100%', height: 'auto' }}/>
+      </Box>
+
       <Typography variant="h4" paragraph>
         <Box fontWeight="300">
           Programmer
@@ -59,7 +68,7 @@ function Home() {
         {mail ? <Typography>maksymilian21wnuk@gmail.com</Typography>: null} 
 
       </Box>
-    </Box>
+    </BoxWrapper>
   );
 }
 

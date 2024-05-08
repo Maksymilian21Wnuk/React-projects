@@ -11,9 +11,11 @@ const theme = createTheme({
   palette: {
     primary: {
       main: '#7091e6',
+      light: '#ede8f5',
     },
     secondary: {
       main: '#807fd9',
+      light: '#adbbda',
     },
   },
   typography: {
@@ -21,6 +23,23 @@ const theme = createTheme({
       'Avenir', 'Montserrat', 'Corbel', 'URW Gothic', 'source-sans-pro', 'sans-serif' 
     ].join(','),
 
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontWeight: 'bold',
+          borderRadius: '10px',
+          padding: '10px 20px',
+        },
+        containedPrimary: {
+          backgroundColor: '#7091e6',
+          '&:hover': {
+            backgroundColor: '#6079cc',
+          },
+        },
+      },
+    },
   },
 });
 
