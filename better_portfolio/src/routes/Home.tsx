@@ -8,7 +8,7 @@ import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import * as React from 'react';
 
 function Home() {
-  const [mail, setMail] = React.useState(0);
+  const [mail, setMail] = React.useState(false);
 
 
   return (
@@ -20,7 +20,9 @@ function Home() {
         </Box>
       </Typography>
       <Typography variant="h4" paragraph>
-        Programmer
+        <Box fontWeight="300">
+          Programmer
+        </Box>
       </Typography>
       <Box sx={{ textAlign: 'center' }}>
         <Button
@@ -50,11 +52,11 @@ function Home() {
           startIcon={<AlternateEmailIcon />}
           variant="contained"
           color="primary"
-          onClick={() => setMail(1)}
+          onClick={() => setMail(!mail)}
         >
           Show Mail
         </Button>
-        {mail ? <Typography>asdf</Typography>: null} 
+        {mail ? <Typography>maksymilian21wnuk@gmail.com</Typography>: null} 
 
       </Box>
     </Box>
