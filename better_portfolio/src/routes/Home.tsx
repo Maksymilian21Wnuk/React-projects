@@ -3,21 +3,24 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Header from './components/header';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import * as React from 'react';
 
 function Home() {
+  const [mail, setMail] = React.useState(0);
+
+
   return (
     <Box p={3} sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-      <Typography variant="h3" gutterBottom>
-        Welcome to My Website!
+      <Header title='Maksymilian Wnuk' />
+      <Typography variant="h3" paragraph>
+        <Box fontWeight="300">
+        Computer Science Student
+        </Box>
       </Typography>
-      <Typography variant="body1" paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-        dapibus diam. Sed nisi.
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante
-        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce
-        nec tellus sed augue semper porta.
+      <Typography variant="h4" paragraph>
+        Programmer
       </Typography>
       <Box sx={{ textAlign: 'center' }}>
         <Button
@@ -38,9 +41,21 @@ function Home() {
           rel="noopener noreferrer"
           variant="contained"
           color="primary"
+          sx={{ mr: 2 }}
         >
           LinkedIn
         </Button>
+
+        <Button
+          startIcon={<AlternateEmailIcon />}
+          variant="contained"
+          color="primary"
+          onClick={() => setMail(1)}
+        >
+          Show Mail
+        </Button>
+        {mail ? <Typography>asdf</Typography>: null} 
+
       </Box>
     </Box>
   );

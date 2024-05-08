@@ -10,7 +10,7 @@ const pages = ['Home', 'About', 'Projects'];
 function Nav() {
 
   return (
-    <AppBar position="sticky" sx={{ borderRadius: '15px', backgroundColor: '#7091e6'}}>
+    <AppBar position="sticky" sx={{backgroundColor: 'primary'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, justifyContent: 'center', display: 'flex'}}>

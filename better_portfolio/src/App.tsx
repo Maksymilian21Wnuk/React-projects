@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router'
-import About from './components/About'
-import Projects from './components/Projects'
-import Home from './components/Home'
-import Nav from './components/Nav'
+import About from './routes/About'
+import Projects from './routes/Projects'
+import Home from './routes/Home'
+import Nav from './routes/Nav'
 import "./app.css"
 
 function App() {

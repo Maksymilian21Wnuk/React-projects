@@ -10,7 +10,6 @@ const App = () => {
   <Tabs.Root className="TabsRoot" defaultValue="account" orientation='vertical'>
     <TabListGetter />
     
-
     <Account />
     
     <Password />
