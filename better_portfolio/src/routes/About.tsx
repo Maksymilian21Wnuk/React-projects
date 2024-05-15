@@ -1,7 +1,7 @@
 import Header from "./components/header";
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import BoxWrapper from "./components/box_wrapper";
 
 export default function About() {
@@ -41,6 +41,7 @@ export default function About() {
       ))}
     </Box>                
   </BoxWrapper>
+  <Outlet/>
 </div>
   );
 }

@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 const pages = [
   {name: 'Home',page: ''}, 
@@ -12,6 +12,7 @@ const pages = [
 
 function Nav() {
   return (
+    <>
     <AppBar position="sticky" sx={{ backgroundColor: 'primary' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -38,6 +39,8 @@ function Nav() {
         </Toolbar>
       </Container>
     </AppBar>
+    <Outlet/>
+    </>
   );
 }
 

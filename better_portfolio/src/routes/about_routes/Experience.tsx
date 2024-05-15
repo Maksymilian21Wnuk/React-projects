@@ -20,28 +20,10 @@ function exp_cards(item : any){
 export default function Experience() {
     const data = [
         {
-            name : "POLcomp",
-            position: "Engineer",
-            date: "March 2014-January 2016",
-            description: "I was responsible for developing new features and fixing bugs in the company's software."
-        },
-        {
-            name : "ProgrameX",
-            position : "Developer",
-            date: "February 2016-September 2018",
-            description: "I was responsible for developing new features and fixing bugs in the company's software.",
-        },
-        {
-            name : "SysyComp",
-            position : "Senior Developer",
-            date: "October 2018-December 2020",
-            description: "I was responsible for developing new features and fixing bugs in the company's software.",
-        },
-        {
-            name : "TechComp",
-            position : "Manager",
-            date: "January 2021-Currently",
-            description: "I am responsible for managing the team and developing new features and fixing bugs in the company's software.",
+            name : "None",
+            position: "None :(",
+            date: "?-?-? - ?-?-?",
+            description: "None (yet)"
         }
       ]
 

@@ -2,7 +2,6 @@ import BoxWrapper from "../components/box_wrapper";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Header from "../components/header";
-import myImage from "../../assets/me.png";
 
 type Paragraph = {
     title: string,
@@ -11,7 +10,7 @@ type Paragraph = {
 
 function paragraph(data : Paragraph) {
     return (
-        <Box mb={6} >
+        <Box mb={6} sx= {{borderBottom : 1, borderTop : 1}} >
             <Typography variant="h4" sx={{ mb: '10px' }}>{data.title}</Typography>
             <Typography variant="h5">{data.text}</Typography>
         </Box>

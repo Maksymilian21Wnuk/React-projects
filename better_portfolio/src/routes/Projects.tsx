@@ -4,44 +4,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import BoxWrapper from './components/box_wrapper';
 
 
-function Project_box(project : any){
-  return (
-    <Box 
-          key={project.name} 
-          mb={3} 
-          p={2}
-          width={600}
-          bgcolor="primary.light"
-          sx={{ 
-            textAlign: 'left', 
-            border : 1, 
-            borderRadius: '16px',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between' // Align items in a column
-          }}
-        >
-          <div>
-            <Typography variant="h5" gutterBottom>
-              {project.name}
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              {project.description}
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              Technologies used: {project.technologies}
-            </Typography>
-          </div>
-          <Link href={project.githubLink} target="_blank" rel="noopener noreferrer">
-            <IconButton>
-              <GitHubIcon />
-              Source code
-            </IconButton>
-          </Link>
-        </Box>
-  );
-}
-
 export default function Projects() {
   // Dummy data for projects
   const projects = [

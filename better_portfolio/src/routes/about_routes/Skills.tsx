@@ -5,19 +5,17 @@ import Header from '../components/header';
 import { Typography } from '@mui/material';
 
 export default function Skills() {
-  // Sample skills data, you can replace this with your actual data
   const skills = [
-    'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', 'MongoDB', "C", "C++"
+    'HTML', 'CSS', 'JavaScript', 'React', 'Node.js', "C", "C++",
+    'Digital Logic', 'Machine Learning', 'SQL', 'Git', 'Linux', 'Bash'
   ];
 
   return (
     <BoxWrapper>
-      <Header title="Skills" />
-      {/* Box with background color */}
+      <Header title="Skills" variant='h2'/>
       <Grid container spacing={3} justifyContent="center">
       <Grid item xs={12} sm={1} md={6}>
       <Box bgcolor="primary.main" p={3} borderRadius={16} textAlign="center">
-        {/* Typography with unordered list */}
         <Typography variant="h4" component="ul" sx={{ color: 'primary.light', textAlign: 'left' }}>
           {skills.map((skill, index) => (
             <li key={index}>{skill}</li>
