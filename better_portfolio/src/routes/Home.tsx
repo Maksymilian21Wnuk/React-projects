@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <BoxWrapper>
-    <Header title='Maksymilian Wnuk' />
+    <Header variant='h3' title='Maksymilian Wnuk' />
       <Typography variant="h3" paragraph>
         <Box fontWeight="300">
         Computer Science Student

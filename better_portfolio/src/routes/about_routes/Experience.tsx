@@ -20,10 +20,10 @@ function exp_cards(item : any){
 export default function Experience() {
     const data = [
         {
-            name : "None",
-            position: "None :(",
-            date: "?-?-? - ?-?-?",
-            description: "None (yet)"
+            name : "BNY Mellon",
+            position: "Software Engineer Intern",
+            date: "6/2024-9/2024",
+            description: "Full-stack engineer work, including Java Spring, Angular, J-Unit."
         }
       ]
 

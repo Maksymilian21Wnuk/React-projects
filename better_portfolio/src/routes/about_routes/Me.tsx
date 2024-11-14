@@ -43,7 +43,7 @@ export default function Me() {
             text : `This beautiful page was written in TypeScript using React and Material-UI. It is a simple single page application that shows information about me. It consists of four subpages: Me, Education, Experience and Skills. 
             You can navigate between them using the buttons in the header. 
             The page is responsive and looks good on all devices. 
-            Ugliest part of this page, source code is available on github.`
+            Source code of page is available on github.`
         }
     ]
     return (
